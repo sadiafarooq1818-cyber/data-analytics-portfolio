@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Analytics & BI Portfolio | Sadia Farooq</title>
+  <style>
+    :root { --bg:#f6f8fb; --card:#ffffff; --ink:#0f172a; --muted:#64748b; --blue:#2563eb; --green:#16a34a; --border:#e2e8f0; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:var(--bg); color:var(--ink); }
+    header { padding:56px 8vw 38px; background:linear-gradient(135deg,#0f172a,#1d4ed8); color:white; }
+    header h1 { margin:0 0 12px; font-size:42px; }
+    header p { max-width:850px; line-height:1.6; color:#dbeafe; font-size:18px; }
+    .wrap { padding:34px 8vw 70px; }
+    .section-title { margin:24px 0 18px; font-size:26px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:18px; padding:24px; box-shadow:0 8px 22px rgba(15,23,42,.06); }
+    .card h3 { margin:0 0 10px; }
+    .card p { color:var(--muted); line-height:1.55; }
+    .tag { display:inline-block; margin:4px 6px 4px 0; padding:7px 10px; border-radius:999px; background:#eff6ff; color:#1d4ed8; font-size:13px; font-weight:600; }
+    .dash { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; margin:22px 0; }
+    .kpi { padding:20px; border-radius:16px; border:1px solid var(--border); background:white; }
+    .kpi span { display:block; color:var(--muted); font-size:13px; font-weight:700; letter-spacing:.04em; }
+    .kpi strong { display:block; margin-top:12px; font-size:32px; }
+    .bar { height:22px; border-radius:9px; background:#dbeafe; margin:14px 0; overflow:hidden; }
+    .bar > div { height:100%; background:var(--blue); border-radius:9px; }
+    a { color:var(--blue); font-weight:700; text-decoration:none; }
+    footer { text-align:center; padding:30px; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sadia Farooq | Data Analytics & BI Portfolio</h1>
+    <p>Portfolio demonstrations for Data Analyst, Reporting Analyst and Business Intelligence roles. Projects cover Excel dashboarding, Power BI dashboard planning, SQL revenue analysis and Python data cleaning.</p>
+  </header>
+  <main class="wrap">
+    <h2 class="section-title">Executive Dashboard Preview</h2>
+    <div class="dash">
+      <div class="kpi"><span>TOTAL SALES</span><strong>$27,845</strong></div>
+      <div class="kpi"><span>TOTAL PROFIT</span><strong>$5,544</strong></div>
+      <div class="kpi"><span>PROFIT MARGIN</span><strong>19.9%</strong></div>
+      <div class="kpi"><span>TOTAL ORDERS</span><strong>40</strong></div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Sales by Region</h3>
+        <p>Regional performance summary prepared for management reporting.</p>
+        <div>NSW <div class="bar"><div style="width:92%"></div></div></div>
+        <div>WA <div class="bar"><div style="width:82%"></div></div></div>
+        <div>VIC <div class="bar"><div style="width:66%"></div></div></div>
+        <div>QLD <div class="bar"><div style="width:47%"></div></div></div>
+      </div>
+      <div class="card">
+        <h3>Skills Demonstrated</h3>
+        <span class="tag">Excel Dashboards</span>
+        <span class="tag">SQL Analysis</span>
+        <span class="tag">Python pandas</span>
+        <span class="tag">Power BI Planning</span>
+        <span class="tag">KPI Reporting</span>
+        <span class="tag">Data Quality</span>
+        <span class="tag">Business Insights</span>
+      </div>
+    </div>
+    <h2 class="section-title">Portfolio Projects</h2>
+    <div class="grid">
+      <div class="card"><h3>Retail Sales Excel Dashboard</h3><p>Dashboard-ready dataset, KPI cards, PivotTable logic and Excel reporting design.</p></div>
+      <div class="card"><h3>Power BI Retail Performance Dashboard</h3><p>DAX measures, dashboard requirements, data definitions and BI documentation.</p></div>
+      <div class="card"><h3>SQL Customer & Revenue Analysis</h3><p>SQL queries for revenue trends, customer segments, margins, discounts and data quality.</p></div>
+      <div class="card"><h3>Python Data Cleaning & Insights</h3><p>pandas workflow for cleaning customer support data and generating KPI summaries.</p></div>
+    </div>
+    <p style="margin-top:28px"><a href="retail-dashboard.html">Open detailed retail dashboard demo →</a></p>
+  </main>
+  <footer>Data Analytics & Business Intelligence Portfolio</footer>
+</body>
+</html>

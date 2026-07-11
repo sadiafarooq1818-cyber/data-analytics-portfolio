@@ -1,5 +1,9 @@
 # Project 01: Retail Sales Excel Dashboard
 
+## Dashboard Preview
+
+![Retail Sales Dashboard Preview](images/retail_dashboard_preview.svg)
+
 ## Business Objective
 
 A medium-sized retail business needs a clear reporting pack to monitor sales performance, category performance, regional performance and monthly trends. This project demonstrates how raw sales data can be organised into dashboard-ready summaries for management reporting.
@@ -11,6 +15,16 @@ A medium-sized retail business needs a clear reporting pack to monitor sales per
 - Which regions are performing above or below target?
 - What are the top-selling products?
 - Where are the largest discounts being applied?
+
+## Evidence Included
+
+| Artefact | Purpose |
+|---|---|
+| `data/retail_sales_sample.csv` | Sample sales dataset used for dashboard preparation |
+| `excel-dashboard-design.md` | Excel dashboard build guide, formulas, PivotTable structure and insight examples |
+| `dashboard/retail_dashboard.html` | Browser-based dashboard mock-up that demonstrates KPI and visual layout |
+| `images/retail_dashboard_preview.svg` | Visual dashboard preview rendered directly in GitHub |
+| `notebooks/retail_sales_analytics_notebook.ipynb` | Python/Jupyter notebook for KPI calculation and grouped summaries |
 
 ## Dataset
 
@@ -65,6 +79,7 @@ Key fields include:
 - PivotTables
 - PivotCharts
 - Power Query concept
+- Python / pandas
 - Data validation
 - KPI reporting
 

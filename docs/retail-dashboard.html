@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retail Sales Dashboard Demo</title>
+  <style>
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#f5f7fb; color:#0f172a; }
+    .container { max-width:1120px; margin:0 auto; padding:36px 20px 70px; }
+    .hero { background:#0f172a; color:white; padding:34px; border-radius:24px; margin-bottom:24px; }
+    .hero h1 { margin:0 0 10px; }
+    .hero p { color:#cbd5e1; line-height:1.55; }
+    .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin:24px 0; }
+    .card { background:white; border:1px solid #e2e8f0; border-radius:20px; padding:22px; box-shadow:0 8px 22px rgba(15,23,42,.06); }
+    .kpi-title { color:#64748b; font-size:13px; font-weight:700; }
+    .kpi-value { font-size:34px; font-weight:800; margin-top:10px; }
+    .grid { display:grid; grid-template-columns:1.05fr .95fr; gap:18px; }
+    @media (max-width:850px) { .grid { grid-template-columns:1fr; } }
+    .bar-row { display:grid; grid-template-columns:50px 1fr 65px; align-items:center; gap:12px; margin:18px 0; font-size:14px; }
+    .track { height:22px; background:#dbeafe; border-radius:99px; overflow:hidden; }
+    .fill { height:100%; background:#2563eb; border-radius:99px; }
+    .line-chart { height:230px; position:relative; border-left:2px solid #cbd5e1; border-bottom:2px solid #cbd5e1; margin:24px 8px 8px; }
+    svg { width:100%; height:100%; position:absolute; left:0; top:0; }
+    .table { width:100%; border-collapse:collapse; font-size:14px; }
+    .table th,.table td { padding:12px; border-bottom:1px solid #e2e8f0; text-align:left; }
+    .table th { color:#475569; background:#f8fafc; }
+    .pill { padding:6px 10px; background:#ecfdf5; color:#047857; border-radius:999px; font-weight:700; font-size:12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Retail Sales Performance Dashboard</h1>
+      <p>This browser-based dashboard demo shows how a business dataset can be transformed into KPI cards, regional analysis, monthly trends and product performance summaries.</p>
+    </section>
+    <section class="kpis">
+      <div class="card"><div class="kpi-title">TOTAL SALES</div><div class="kpi-value">$27,845</div></div>
+      <div class="card"><div class="kpi-title">TOTAL PROFIT</div><div class="kpi-value">$5,544</div></div>
+      <div class="card"><div class="kpi-title">PROFIT MARGIN</div><div class="kpi-value">19.9%</div></div>
+      <div class="card"><div class="kpi-title">TOTAL ORDERS</div><div class="kpi-value">40</div></div>
+    </section>
+    <section class="grid">
+      <div class="card">
+        <h2>Sales by Region</h2>
+        <div class="bar-row"><span>NSW</span><div class="track"><div class="fill" style="width:92%"></div></div><strong>$9.7k</strong></div>
+        <div class="bar-row"><span>WA</span><div class="track"><div class="fill" style="width:82%"></div></div><strong>$8.5k</strong></div>
+        <div class="bar-row"><span>VIC</span><div class="track"><div class="fill" style="width:66%"></div></div><strong>$6.2k</strong></div>
+        <div class="bar-row"><span>QLD</span><div class="track"><div class="fill" style="width:47%"></div></div><strong>$4.3k</strong></div>
+        <div class="bar-row"><span>SA</span><div class="track"><div class="fill" style="width:25%"></div></div><strong>$2.1k</strong></div>
+      </div>
+      <div class="card">
+        <h2>Monthly Sales Trend</h2>
+        <div class="line-chart">
+          <svg viewBox="0 0 520 220" preserveAspectRatio="none">
+            <polyline points="20,175 85,143 150,155 215,112 280,95 345,70 410,88 480,38" fill="none" stroke="#16a34a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+            <g fill="#16a34a"><circle cx="20" cy="175" r="6"/><circle cx="85" cy="143" r="6"/><circle cx="150" cy="155" r="6"/><circle cx="215" cy="112" r="6"/><circle cx="280" cy="95" r="6"/><circle cx="345" cy="70" r="6"/><circle cx="410" cy="88" r="6"/><circle cx="480" cy="38" r="6"/></g>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="card" style="margin-top:18px">
+      <h2>Category Performance</h2>
+      <table class="table">
+        <tr><th>Category</th><th>Sales</th><th>Profit</th><th>Status</th></tr>
+        <tr><td>Technology</td><td>$17,240</td><td>$3,781</td><td><span class="pill">Strong</span></td></tr>
+        <tr><td>Furniture</td><td>$8,650</td><td>$1,523</td><td><span class="pill">Monitor Margin</span></td></tr>
+        <tr><td>Office Supplies</td><td>$1,955</td><td>$240</td><td><span class="pill">Stable</span></td></tr>
+      </table>
+    </section>
+  </div>
+</body>
+</html>
